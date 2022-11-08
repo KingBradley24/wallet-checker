@@ -10,7 +10,7 @@ function App() {
   const [footerNoteEnd, setFooterNoteEnd] = useState(" if you think this has saved your skin!")
 
   const handleChange = event => {
-    setInputValue(event.target.value);
+    setInputValue(event.target.value.trim());
   }
 
   const handleSubmit = event => {
@@ -32,23 +32,27 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        Wallet Checker
-      </header>
+      <div className="App-header">
+        <header>
+          Wallet Checker
+        </header>
+      </div>
       <div className="App-body">
         Check if your private key has been hacked
         <form className="App-form" onSubmit={handleSubmit}>
           <input className="App-input" type="text" value={inputValue} onChange={handleChange} placeholder="0x.." />
-          <input className= "App-button" type="submit" value="Check" />
+          <input className="App-button" type="submit" value="Check" />
         </form>
         {incorrectShown && <Incorrect />}
         {failureShown && <Oof />}
       </div>
-      <footer className="App-footer">
-        {footerNoteStart}
-        <u>{footerNoteAddress}</u>
-        {footerNoteEnd}
-      </footer>
+      <div className="App-footer">
+        <footer>
+          {footerNoteStart}
+          <u>{footerNoteAddress}</u>
+          {footerNoteEnd}
+        </footer>
+      </div>
     </div>
   );
 }
@@ -56,7 +60,7 @@ function App() {
 function Oof() {
   return (
     <div>
-      <img src={require('./images/failfish.png')} alt="Facepalm" />
+      <img resizeMode='contain' src={require('./images/failfish.png')} alt="Facepalm" />
       <div>
         The fact that you think it works this way is cause for concern...
       </div>
