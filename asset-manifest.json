@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/wallet-checker/static/css/main.822b2e42.css",
+    "main.js": "/wallet-checker/static/js/main.2dd40a27.js",
+    "static/js/787.5861b2b4.chunk.js": "/wallet-checker/static/js/787.5861b2b4.chunk.js",
+    "static/media/failfish.png": "/wallet-checker/static/media/failfish.b8155bd9d7e7b3d9a2bd.png",
+    "index.html": "/wallet-checker/index.html",
+    "main.822b2e42.css.map": "/wallet-checker/static/css/main.822b2e42.css.map",
+    "main.2dd40a27.js.map": "/wallet-checker/static/js/main.2dd40a27.js.map",
+    "787.5861b2b4.chunk.js.map": "/wallet-checker/static/js/787.5861b2b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.822b2e42.css",
+    "static/js/main.2dd40a27.js"
+  ]
+}
